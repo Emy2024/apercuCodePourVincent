@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Sophie Bluel - Architecte d'intérieur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body class="bodyLogin">
+<header>
+	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+	<nav>
+		<ul>
+			<li><a href="./index.html"></a>projets</li>
+			<li>contact</li>
+			<li class="active"><a href="#"></a>login</li>
+			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+		</ul>
+	</nav>
+</header>
+<main>
+  <section class="contact">
+		<h2>Log in</h2>
+		
+		<form action="#" id="formLogin" class="form">
+			<div class="labelAndInput">
+				<label for="email">Email<span class="etoile">*</span></label>
+				<div class="inputAndIcon">
+							<input class="inputFied"
+								type="email" 
+								name="email" 
+								id="email" 
+						
+								>
+						<span class="inputIconMail hideIcon">
+							<i class="fa-solid fa-circle-exclamation"></i>
+						</span>
+				</div>
+				<div id="messageErreurClientEmail"></div>
+			</div>
+			
+			<div class="labelAndInput">
+				<label for="password">Mot de passe<span class="etoile">*</span></label>
+				<div class="inputAndIcon">
+							<input class="inputFied"
+								type="password" 
+								name="password" 
+								id="password" 
+								
+								>
+						<span class="inputIconPassword hideIcon">
+							<i class="fa-solid fa-circle-exclamation"></i>
+						</span>
+				</div>
+				<div id="messageErreurClientPassword"></div>
+			</div>
+			<div id="messageErreurFetch" class="messageErreurFetch"></div>
+			<input type="submit" value="Se connecter" id="submit" oninput="submit">
+			
+		</form>
+
+
+		</div>
+    <p><a class="mdpOublie" href="#">Mot de passe oublié</a></p>
+	</section>
+</main>
+
+<footer>
+	<nav>
+		<ul>
+			<li>Mentions Légales</li>
+		</ul>
+	</nav>
+</footer>
+
+<script type="module" src="./assets/js/login.js" defer ></script> 
+
+</body>
+</html>

@@ -1,0 +1,821 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** end reset css**/
+body {
+	margin:auto;
+	font-family: 'Work Sans' ;
+	font-size: 14px;
+  background-color: #FFFEF8; 
+}
+.bodyLogin{
+	max-height: 100vh;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0;
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+main {
+	max-width: 1140px;
+	margin: auto;
+	position: relative;
+}
+section {
+	margin: 50px 0
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size:10px;
+	letter-spacing: 0.1em;
+;
+}
+
+h2{
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+nav li {
+	padding: 0 10px;
+	font-size: 1.2em;
+}
+
+li:hover {
+	color: #B1663C;
+}
+
+.active{
+	font-weight: bolder;
+}
+
+
+
+/************************** Introduction *******************************/
+
+#introduction {
+	display: flex;
+	align-items: center;
+}
+#introduction figure {
+	flex: 1
+}
+#introduction img {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+#introduction article {
+	flex: 1
+}
+#introduction h2 {
+	margin-bottom: 1em;
+}
+
+#introduction p {
+	margin-bottom: 0.5em;
+}
+
+/************************** Portfolio Homepage *******************************/
+
+#portfolio h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+
+/************************** Filtres Homepage *******************************/
+.filter{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	font-size: 30px;
+	padding-bottom: 1em;
+}
+
+.filter button{
+	background-color: #FFFEF8;
+	color: #1D6154;
+	padding: 1em;
+	border: #1D6154 1px solid;
+	border-radius: 25px;
+	margin: 5px;
+	font-family: 'Syne';
+	font-weight: 700;
+}
+
+.filter button:hover{
+	background-color: #1D6154;
+	color: white;
+	cursor: pointer;
+}
+
+.filter button:focus{
+	background-color: #1D6154;
+	color: white;
+}
+
+
+.gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+
+.gallery img {
+	width: 100%;
+
+}
+
+
+/************************** Formulaires contact Homepage + login (page login) *******************************/
+.contact {
+width: 37%;
+margin: auto;
+}
+
+.contact > * {
+	text-align: center;
+
+}
+.contact h2{
+	margin-bottom: 20px;
+}
+.contact form {
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+.contact label {
+	margin: 2em 0 1em 0;
+}
+.contact textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"]{
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px ;
+}
+
+
+
+
+
+/******************** Lien sous Formulaire login (page login) ************************/
+
+.labelAndInput{
+padding: 25px;
+}
+.inputAndIcon{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 15px;
+}
+.inputFied{
+	width: 100%;
+	position: relative;
+}
+.inputIconMail{
+	position: absolute;
+	color: red;
+	margin-right: 5px;
+}
+.inputIconPassword{
+	position: absolute;
+	color: red;
+	margin-right: 5px;
+}
+
+.etoile{
+	color: red;
+}
+
+.hideIcon{
+	display: none;
+}
+.mdpOublie{
+	color: black;
+}
+.messageErreur{
+	color: red;
+	font-size: 13px;
+	font-weight: bold;
+}
+.messageErreurFetch{
+	color: red;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 5px;
+}
+.placeholderError{
+	background-color: rgba(255, 0, 0, 0.272);
+	border: 1px solid red !important;
+}
+#messageErreurClientEmail{
+	margin-top: 5px;
+	color: red;
+	font-weight: 700;
+}
+
+#messageErreurClientPassword{
+	margin-top: 5px;
+	color: red;
+	font-weight: 700;
+}
+
+#messageErreurFetch{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/************************** Footer Homepage*******************************/
+
+footer{
+	padding: 5px;
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	display: flex;
+	justify-content: end;
+ 	position: absolute; 
+
+}
+
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************** Connexion : homepage *******************************/
+
+/************** Bandeau "Mode édition" tout en haut du site *************/
+.sous_div_modeEdition {
+	background-color: rgb(0, 0, 0);
+	width: 100%;
+	height: 50px;
+	margin-bottom: 15px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.sous_div_modeEdition ::after{
+	content: "Mode édition";
+	font-size: 14px;
+	font-weight: 600;
+	font-family: 'Work Sans' ;
+	margin-left: 10px;
+}
+
+
+/************ Logo et text "modifier" au niveau du h2 Mes Projets ************/
+
+.modale_open_button{
+	align-items: center;
+	color: black;
+	font-size: large;
+	font-weight: 100;
+	padding-left: 20px;
+}
+
+.modale_open_button ::after{
+	content: "modifier";
+	font-size: medium;
+	font-weight: 100;
+	font-family: 'Syne';
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+
+/************ Logout ************/
+
+.logout{
+	cursor: pointer;
+}
+
+
+/*********** Modale & overlay ***********/
+.modale_overlay_active{
+	background-color: rgba(0, 0, 0, 0.377);
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+.modale_overlay_inactive{
+	display: none;
+}
+
+.modale_active{
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	padding: 55px;
+	position: fixed;
+	width: 28%;
+	z-index: 2;
+}
+
+.modale_inactive{
+	display: none;
+}
+
+/*********** Modale Title and line ***********/
+
+.modaleTitle{
+	font-size: large;
+}
+
+.modaleLine{
+	width: 100%;
+	height: 1px;
+	border-top: rgb(214, 214, 214) solid 1px;
+	margin-top: 29px;
+}
+
+/*********** Modale Main button ***********/
+
+.modaleMainButton_active{
+	border: 0;
+	width: 50%;
+	background-color: #1D6154;
+	color: #FFFEF8;
+	padding: 1em;
+	border: #1D6154 1px solid;
+	border-radius: 25px;
+	font-family: 'Syne';
+	font-weight: 700;
+	margin: auto;
+	margin-top: 32px;
+}
+
+.modaleMainButton_active:hover {
+	background-color: white ;
+	color: #1D6154;
+	cursor: pointer;
+}
+
+.modaleMainButton_inactive{
+	border: 0;
+	width: 50%;
+	background-color: #A7A7A7;
+	color: white;
+	padding: 1em;
+	border: #A7A7A7 1px solid;
+	border-radius: 25px;
+	font-family: 'Syne';
+	font-weight: 700;
+	margin: auto;
+	margin-top: 32px;
+}
+
+/*********** Modale Close Button ***********/
+.modale_close_button_active {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 35px 40px;
+	font-size: large;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+	cursor: pointer;
+}
+
+.modale_close_button_inactive {
+	display: none;
+}
+
+/*********** Modale Previous Button ***********/
+
+.modale_previous_button_active{
+	color: black;
+	cursor: pointer;
+	font-size: 14px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 35px 40px;
+}
+
+.modale_previous_button_inactive {
+	display: none;
+}
+
+/*********** Modale Main Content ***********/
+.modaleMainContent{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+.modaleMainContent{
+	display: none;
+}
+
+/*********** Modale Gallery + trash elements ***********/
+.galleryContainer_modale_active{
+	gap: 5px; 
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgba(255, 255, 0, 0);
+	z-index: 20;
+ }
+
+.galleryContainer_modale_inactive{
+	display: none;
+ }
+
+.imageModale{
+	height: 109px;
+}
+
+.containerImageModale{
+	position: relative;
+}
+
+.image{
+	height: 89px;
+}
+
+
+.trashElementModale{
+	z-index: 999;
+	position: absolute;
+	top: 5px;
+	right: 3px;
+	width: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.trashIconModale{
+	background-color: rgb(0, 0, 0);
+	padding: 3px;
+	color: white;
+	border-radius: 5px;
+	font-size: small;
+}
+
+
+/*********** Modale Upload container***********/
+.upload_modale_container_picture_active{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	background-color: #E8F1F6;
+	width: 100%;
+	height: 200px;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+.upload_modale_container_picture_inactive{
+	display: none;
+}
+
+.upload_modale_sub_container_picture_active{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.upload_modale_sub_container_picture_inactive{
+	display: none;
+}
+
+/*********** Modale Upload container***********/
+.upload_modale_container_subform{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.upload_modale_icon{
+	position: absolute;
+	top: 12%;
+	color: #b9c5cc;
+	z-index: 999;
+	font-size: 88px;
+}
+ 
+.upload_modale_button{
+	position: absolute;
+	bottom: 38px;
+	align-items: center;
+	z-index: 999;
+	background-color:#CBD6DC;
+	color: #306685;
+	border-radius: 25px;
+	border: 0;
+	padding: 10px 15px;
+	width: 53%;
+	font-size: large;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.upload_modale_paragraph{
+	margin-top: 15px;
+	position: absolute;
+	align-items: center;
+	bottom: 10%;
+	z-index: 999;
+	font-size: 9px;
+	font-weight: 300;
+	color: #444444;
+}
+
+/*********** Modale Upload ***********/
+.formModale_active{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255, 0, 0, 0);
+	width: 100%;
+	text-align: left !important;
+	padding-top: 8px;
+}
+
+.formModale_inactive{
+	display: none;
+}
+
+/*********** Modale Upload FORM ***********/
+
+.upload_modale_form_inactive{
+	display: none;
+}
+.upload_modale_form_active{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.modaleForm_label{
+	color: #3D3D3D;
+	padding-top: 25px;
+	padding-bottom: 2px;
+}
+
+.modaleForm_input{
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	padding: 15px;
+	margin: 15px 0px;
+	background-color: white;
+}
+
+
+
+
+/*********** Modale Upload FORM - suppression image ***********/
+
+.modaleOverlayDivDeletePicture{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #3d3d3dca;
+	z-index: 110;
+}
+
+.modaleDivDeletePicture {
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+	min-height: 100px;
+	width: 60%;
+	z-index: 111;
+	padding: 35px;
+	border-radius: 15px;
+}
+
+.modaleContainerButtonDeleteAnswer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.buttonYesDeleteAnswer{
+	padding: 10px;
+	width: 45%;
+	background-color: tomato;
+	border: 0 solid ;
+	border-radius: 15px;
+	color: white;
+	margin: 0px 15px;
+	font-size: medium;
+	line-height: 20px;
+}
+
+.buttonYesDeleteAnswer:hover{
+	background-color: white;
+	border: 1px solid tomato;
+	color: tomato;
+	cursor: pointer;
+}
+
+.buttonNoDeleteAnswer{
+	padding: 10px;
+	width: 45%;
+	background-color: #1D6154;
+	border: 0 solid ;
+	border-radius: 15px;
+	color: white;
+	margin: 0px 15px;
+	font-size: medium;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.buttonNoDeleteAnswer:hover{
+	background-color: white;
+	color: #1D6154;
+	border: 1px solid #1D6154;
+}
+
+.modaleDeleteQuestionTitle{
+	font-size: large;
+	text-align: center;
+	line-height: 20px;
+}
+
+.modaleDeleteQuestionParagraph{
+	font-size: medium;
+	padding-top: 15px;
+	line-height: 20px;
+}
+
+
+
+
+/*********** Modale overview new picture***********/
+.imageOverview{
+	max-width: 50%;
+	height: 200px;
+}
+
+/*********** Modale overview new picture - size too big***********/
+.errorSizeImage_active{
+	position: absolute;
+	bottom: -16px;
+	color: red;
+	font-size: small;
+}
+
+.errorSizeImage_inactive{
+	display: none;
+}
+
+
+
+
+
+/*********** Modale new picture - champs erreurs ***********/
+.modaleForm_title_input_error_active{
+	color: red;
+	font-size: small;
+}
+
+.modaleForm_title_input_error_inactive{
+	display: none;
+}
+
+
+
+
+
+
+
+.paragraphErrorEmptyFields{
+	padding: 5px 0;
+	color: red;
+	text-align: center;
+}
